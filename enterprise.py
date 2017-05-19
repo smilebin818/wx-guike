@@ -198,7 +198,7 @@ def application(environ, start_response):
     d = parse_qs(environ['QUERY_STRING'])
 
     # always restart Mmrz at start
-    restart_Mmrz()
+    # restart_Mmrz()
 
     # set up weixin callback mode
     if "echostr" in environ['QUERY_STRING']:
