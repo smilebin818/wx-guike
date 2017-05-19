@@ -9,7 +9,7 @@ from tools.getWeather import getWeather
 
 import xml.etree.cElementTree as ET
 
-import os, re, time
+import os, re, time, sys, threading
 import urllib, urllib2
 import threading
 import datetime
@@ -162,7 +162,7 @@ def application(environ, start_response):
 
                 restart_server("guikeServer_restart")
 
-                ret, message = wx.EncryptMsg(text_T.format("restart wx-guike_server, OK"), d["nonce"][0])
+                ret, message = wx.EncryptMsg(text_T.format("restart guikeServer:7820, OK"), d["nonce"][0])
 
                 return message
 
@@ -185,7 +185,7 @@ def application(environ, start_response):
 
                 restart_server("cqwdt_restart")
 
-                ret, message = wx.EncryptMsg(text_T.format("restart wx-guike_server, OK"), d["nonce"][0])
+                ret, message = wx.EncryptMsg(text_T.format("restart cqwdt:7818, OK"), d["nonce"][0])
 
                 return message
         else:

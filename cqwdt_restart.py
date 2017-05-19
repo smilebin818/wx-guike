@@ -9,7 +9,9 @@ os.system("netstat -ntlp | grep 7818 | awk '{print $7}' | awk -F/ '{print $1}' |
 if len(sys.argv) == 2 and sys.argv[1] == "shut":
     sys.exit(0)
 
-print("restarting makeServer.py")
+print("restarting cqwdt_restart.py 7818")
 
-# os.system("nohup python /home/yanbin/wx-cqwdt/makeServer.py&")
-threading.Thread(target=lambda: os.system("nohup python /home/yanbin/wx-cqwdt/makeServer.py&"), args=()).start()
+os.system("nohup python /home/yanbin/wx-cqwdt/makeServer.py&")
+
+
+
