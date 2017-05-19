@@ -1,13 +1,15 @@
-import os, sys
+import os, sys, threading
 
 port = 7818
 
 print("killing server which is using port: {0}".format(port))
 # os.system("ps -ef | grep makeServer.py | grep -v grep | cut -c 9-15 | xargs kill -s 9")
-os.system("netstat -ntlp | grep 7818 | awk '{print $7}' | awk -F/ '{print $1}' | xargs kill")
+os.system("netstat -ntlp | grep {0} | awk '{print $7}' | awk -F/ '{print $1}' | xargs kill".format(port))
 
 if len(sys.argv) == 2 and sys.argv[1] == "shut":
     sys.exit(0)
 
 print("restarting makeServer.py")
-os.system("nohup python /home/yanbin/wx-cqwdt/makeServer.py&")
+
+# os.system("nohup python /home/yanbin/wx-cqwdt/makeServer.py&")
+threading.Thread(target=lambda: os.system("nohup python /home/yanbin/wx-cqwdt/makeServer.py&"), args=()).start()

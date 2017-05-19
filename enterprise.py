@@ -32,7 +32,7 @@ sAppId          = "wx8ccdd6bb1cccd4cc"
 # {3}: Content
 text_T = "\
 <xml>\
-<ToUserName><![CDATA[zhanglintc]]></ToUserName>\
+<ToUserName><![CDATA[yanbin818]]></ToUserName>\
 <FromUserName><![CDATA[wx1c77202393c1c41d]]></FromUserName>\
 <CreateTime>1348831860</CreateTime>\
 <MsgType><![CDATA[text]]></MsgType>\

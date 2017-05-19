@@ -20,7 +20,7 @@ postBody = "\
 
 xmlContent = "\
 <xml><ToUserName><![CDATA[wx1c77202393c1c41d]]></ToUserName>\
-<FromUserName><![CDATA[zhanglintc]]></FromUserName>\
+<FromUserName><![CDATA[yanbin818]]></FromUserName>\
 <CreateTime>1448614862</CreateTime>\
 <MsgType><![CDATA[event]]></MsgType>\
 <AgentID>0</AgentID>\
