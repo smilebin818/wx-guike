@@ -11,7 +11,7 @@ if len(sys.argv) == 2 and sys.argv[1] == "shut":
 
 print("restarting guikeServer_restart.py 7820")
 
-os.system("nohup python /home/yanbin/wx-guike_server/makeServer.py&")
+os.system("cd /home/yanbin/wx-guike_server && nohup python /home/yanbin/wx-guike_server/makeServer.py&")
 
 
 

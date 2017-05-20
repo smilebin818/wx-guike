@@ -11,7 +11,7 @@ if len(sys.argv) == 2 and sys.argv[1] == "shut":
 
 print("restarting cqwdt_restart.py 7818")
 
-os.system("nohup python /home/yanbin/wx-cqwdt/makeServer.py&")
+os.system("cd /home/yanbin/wx-cqwdt/ && nohup python /home/yanbin/wx-cqwdt/makeServer.py&")
 
 
 
